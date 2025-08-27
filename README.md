@@ -21,8 +21,7 @@ To install the requirements use the following command:
 pip3 install -r requirements.txt
 ```
 
-Lastly, in order to utilize GitDorker, a github personal access token must be created and utilized using the `-t` or `-tf` switch if using multiple tokens. You may follow the documentation here to create your own access token. Please follow the guide below if you are unsure of how to create a personal access token, [click here]
-(https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+Lastly, in order to utilize GitDorker, a github personal access token must be created and utilized using the `-t` or `-tf` switch if using multiple tokens. You may follow the documentation here to create your own access token. Please follow the guide below if you are unsure of how to create a personal access token, [click here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 
 Note: It is recommended to provide GitDorker with at least two GitHub personal access tokens so that it may alternate between the two during the dorking process and reduce the likelihood of being rate limited. Using multiple tokens from separate GitHub accounts will provide the best results.
 
