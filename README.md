@@ -29,7 +29,6 @@ Within the dorks folder are a list of dorks. It is recommended to use the "alldo
 
 ## Setup
 In order to download GitDorker perform the following command in your terminal of choice.
-
 ```bash
 git clone https://github.com/obheda12/GitDorker
 ```
@@ -38,10 +37,9 @@ To install the requirements use the following command:
 ```bash
 pip3 install -r requirements.txt
 ```
-Lastly, in order to utilize GitDorker, a github personal access token must be created and utilized using the “-t” or “-tf” switch if using multiple tokens. You may follow the documentation below to create your own access token.
+Lastly, in order to utilize GitDorker, a github personal access token must be created and utilized using the `-t` or `-tf` switch if using multiple tokens. You may follow the documentation below to create your own access token.
 
 ## Usage
-
 For more detail on how to use GitDorker along with potential use cases, go here: https://medium.com/@obheda12/gitdorker-a-new-tool-for-manual-github-dorking-and-easy-bug-bounty-wins-92a0a0a6b8d5 
 
 For a full detailed look of use cases and how to use GitDorker's most updated features please see the BlackHat Presentation below:
@@ -52,7 +50,6 @@ Help Output:
 ![Help](https://github.com/obheda12/GitDorker/blob/master/GitDorker%20Help.png)
 
 ## Docker
-
 Build Command
 ```bash
 docker build -t gitdorker .
