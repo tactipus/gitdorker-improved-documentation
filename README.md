@@ -1,17 +1,12 @@
 ![Logo](https://github.com/obheda12/GitDorker/blob/master/GitDorker.png)
 
-# GitDorker
 GitDorker is a tool that utilizes the GitHub Search API and an extensive list of GitHub dorks that I've compiled from various sources to provide an overview of sensitive information stored on github given a search query. 
 
 The Primary purpose of GitDorker is to provide the user with a clean and tailored attack surface to begin harvesting sensitive information on GitHub. GitDorker can be used with additional tools such as GitRob or Trufflehog on interesting repos or users discovered from GitDorker to produce best results.
 
-## In Depth How to Video and Use Cases
-https://youtu.be/UwzB5a5GrZk
 
-## Rate Limits
-GitDorker utilizes the GitHub Search API and is limited to 30 requests per minute. In order to prevent the rate limit from impeding the application, a sleep function is built into GitDorker after every 30 requests to prevent search failures. Therefore, if one were to run use the alldorks.txt file with GitDorker, the process will take roughly 5 minutes to complete. 
 
-## Requirements
+# Requirements
 ** Python3
 
 ** GitHub Personal Access Token
@@ -24,10 +19,8 @@ https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-a
 ## Recommendations
 It is recommended to provide GitDorker with at least two GitHub personal access tokens so that it may alternate between the two during the dorking process and reduce the likelihood of being rate limited. Using multiple tokens from separate GitHub accounts will provide the best results.
 
-## Dorks
-Within the dorks folder are a list of dorks. It is recommended to use the "alldorks.txt" file when mapping out your github secrets attack surface. The "alldorks.txt" is my collection of dorks that i've pulled from various resources, totalling to 239 individual dorks of sensitive github information.
 
-## Setup
+# Setup
 In order to download GitDorker perform the following command in your terminal of choice.
 ```bash
 git clone https://github.com/obheda12/GitDorker
@@ -39,17 +32,20 @@ pip3 install -r requirements.txt
 ```
 Lastly, in order to utilize GitDorker, a github personal access token must be created and utilized using the `-t` or `-tf` switch if using multiple tokens. You may follow the documentation below to create your own access token.
 
-## Usage
+# Usage
 For more detail on how to use GitDorker along with potential use cases, go here: https://medium.com/@obheda12/gitdorker-a-new-tool-for-manual-github-dorking-and-easy-bug-bounty-wins-92a0a0a6b8d5 
 
 For a full detailed look of use cases and how to use GitDorker's most updated features please see the BlackHat Presentation below:
 https://youtu.be/UwzB5a5GrZk
 
+## Dorks
+Within the dorks folder are a list of dorks. It is recommended to use the "alldorks.txt" file when mapping out your github secrets attack surface. The "alldorks.txt" is my collection of dorks that i've pulled from various resources, totalling to 239 individual dorks of sensitive github information.
+
 Help Output:
 
 ![Help](https://github.com/obheda12/GitDorker/blob/master/GitDorker%20Help.png)
 
-## Docker
+# Docker
 Build Command
 ```bash
 docker build -t gitdorker .
@@ -80,6 +76,12 @@ The following command was run to query for "tesla.com" against a list of dorks:
 ![Results](https://github.com/obheda12/GitDorker/blob/master/GitDorker%20Usage%20Example%20-%20Tesla.png)
 
 Note: The more advanced queries you put (i.e incorporation of user, org, endpoint information, etc. the more succint results you will achieve)
+
+## In Depth How to Video and Use Cases
+https://youtu.be/UwzB5a5GrZk
+
+## Rate Limits
+GitDorker utilizes the GitHub Search API and is limited to 30 requests per minute. In order to prevent the rate limit from impeding the application, a sleep function is built into GitDorker after every 30 requests to prevent search failures. Therefore, if one were to run use the alldorks.txt file with GitDorker, the process will take roughly 5 minutes to complete. 
 
 ## If you like GitDorker and want to see more cool tools!
 <a href="https://www.buymeacoffee.com/obheda12" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
