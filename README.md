@@ -35,9 +35,9 @@ git clone https://github.com/obheda12/GitDorker
 ```
 
 To install the requirements use the following command:
-
+```bash
 pip3 install -r requirements.txt
-
+```
 Lastly, in order to utilize GitDorker, a github personal access token must be created and utilized using the “-t” or “-tf” switch if using multiple tokens. You may follow the documentation below to create your own access token.
 
 ## Usage
