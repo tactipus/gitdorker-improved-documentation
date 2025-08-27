@@ -6,11 +6,9 @@ The Primary purpose of GitDorker is to provide the user with a clean and tailore
 
 # Installation
 ## Requirements
-** Python3
+* **Python3**
 
-** GitHub Personal Access Token
-
-** Install requirements inside of the requirements.txt file of this repo (pip3 install -r requirements.txt)
+* **GitHub Personal Access Token**
 
 ## Setup
 In order to download GitDorker perform the following command in your terminal of choice.
