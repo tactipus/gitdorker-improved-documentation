@@ -2,7 +2,20 @@
 
 GitDorker is a tool that utilizes the GitHub Search API and an extensive list of GitHub dorks that I've compiled from various sources to provide an overview of sensitive information stored on github given a search query.
 
-The Primary purpose of GitDorker is to provide the user with a clean and tailored attack surface to begin harvesting sensitive information on GitHub. GitDorker can be used with additional tools such as GitRob or Trufflehog on interesting repos or users discovered from GitDorker to produce best results.
+The primary purpose of GitDorker is to provide the user with a clean and tailored attack surface to begin harvesting sensitive information on GitHub. GitDorker can be used with additional tools such as GitRob or Trufflehog on interesting repos or users discovered from GitDorker to produce best results.
+
+## Table of Contents
+- [Installation](#installation)
+  - [Requirements](#requirements)
+  - [Setup](#setup)
+- [Usage](#usage)
+  - [Example](#example)
+- [Dorks](#dorks)
+- [Docker](#docker)
+  - [Screenshots](#screenshots)
+- [Rate Limits](#rate-limits)
+- [Credits](#credits)
+- [Disclaimer](#disclaimer)
 
 # Installation
 
@@ -53,7 +66,6 @@ https://youtu.be/UwzB5a5GrZk
 For our demo we will be performing dorks on Tesla as our target to enumerate potential sources of sensitive information exposure. We will first identify Tesla’s GitHub organization account name to use in our query. A quick google search for “tesla github” gives us the organization account, teslamotors.
 
 Press enter or click to view image in full size
-
 
 Press enter or click to view image in full size
 
